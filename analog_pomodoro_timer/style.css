@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.outer-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#4CAF50 0%, #ddd 0%); /* Initial state */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    width: 80%; /* Adjust for border */
+    height: 80%; /* Adjust for border */
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.controls {
+    margin-top: 20px; /* Add margin to separate from the timer */
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.setting {
+    margin-bottom: 10px;
+}
+
+.setting label {
+    margin-right: 10px;
+}
+
+.setting input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
